@@ -1,0 +1,25 @@
+POST http://192.168.0.7:8080/SoilProbe/actions/getAllProperties
+
+###
+POST http://192.168.0.7:8080/SoilProbe/actions/setProperties
+
+{ 
+  "battery": 90
+}
+
+###
+
+PATCH http://177.104.61.17:1026/v2/entities/urn:ngsi-ld:SoilProbe:006/attrs
+Content-Type: application/json
+fiware-service: openiot
+fiware-servicepath: /
+
+{
+  "type": "SoilProbe"
+  "battery" :{
+    "value":10
+  },
+  "identifier" :{
+    "value": 4004
+  }
+}

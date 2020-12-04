@@ -1,0 +1,10 @@
+{
+  "mqtt_configurations": {
+    "host": "localhost",
+    "port": 1883
+  },
+  "http_configurations": {
+    "port": 8080
+  },
+  "number_of_soil_probes": 1000
+}
